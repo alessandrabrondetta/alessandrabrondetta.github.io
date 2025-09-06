@@ -1,16 +1,180 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Academic Website</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Define title -->
+    <title>Alessandra Brondetta</title>
+
+    <!-- Include favicon. Use, e.g., https://favicon.io/ -->
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+
+    <!-- Include style sheets -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
+
+    <!-- Load FontAwesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" />
+
+    <!-- Load Academicons (for more icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
+        integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+        crossorigin="anonymous" />
 </head>
 
 <body>
-    <h1>Your Name</h1>
-    <p>Welcome to my academic website!</p>
-    <p>This is a simple start - more content coming soon.</p>
+
+    <section id="content">
+        <img src="assets/me_square.jpg" alt="Alessandra Brondetta" class="avatar" />
+        <h1>Hi, I'm Alessandra Brondetta!</h1>
+        <ul class="icons">
+            <li>
+                <a href="https://www.ai4cogsci.com" title="Institutional website"><i class="fas fa-university"></i></a>
+            </li>
+            <li>
+                <a href="mailto:alessandra.brondetta@gmail.com" title="E-Mail"><i class="fas fa-envelope"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/alessandrabrondetta" title="GitHub"><i class="fab fa-github"></i></a>
+            </li>
+            <li>
+                <a href="todo" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="todo" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+            </li>
+        </ul>
+        <p class="intro">
+            I am a Ph.D. student at <a href="https://www.uni-osnabrueck.de/en">Osnabrück University</a> in <a
+                href="https://smusslick.com/">Sebastian Musslick's</a> <a href="https://www.ai4cogsci.com/">research
+                group</a>, exploring the
+            intersection of Artificial Intelligence and Cognitive Science.
+            <br>
+
+            With a background in Complex Systems and Theoretical Physics from the <a
+                href="https://en.unito.it/">University of Turin</a>, I'm passionate
+            about understanding cognitive processes through AI and developing cognitive steering approaches for AI
+            models using dynamical systems theory.
+        </p>
+
+    </section>
+
+    <section id="news">
+        <!-- small list of talks, publications and other related events -->
+        <h2> News</h2>
+        <ul>
+            <li>
+                <span class="date">08/2025</span> Published our commentary <a href="https://arxiv.org/abs/2408.11811"
+                    title="Not Yet AlphaFold for the Mind">"Not Yet AlphaFold"</a>.
+            </li>
+            <li>
+                <span class="date">03/2025</span> Officially started as a PhD student with Prof. Sebastian
+                Musslick.
+            </li>
+            <li>
+                <span class="date">02/2025</span> Released <a href="https://github.com/alessandrabrondetta/mentevo"
+                    title="Mentevo Python Library">Mentevo</a>, a Python library for multi-agent task-switching
+                modeling.
+            </li>
+            <li>
+                <span class="date">10/2024</span> Research talk for NTU Singapore's Dynamical Systems group.
+            </li>
+            <li>
+                <span class="date">09/2024</span> Joined <a href="https://www.uni-osnabrueck.de/en">Institute of
+                    Cognitive Science (Osnabrück University)</a> as Research Associate.
+            </li>
+            <li>
+                <span class="date">08/2024</span> <a href="https://escholarship.org/uc/item/6b47b61g">Heterogeneity
+                    paper</a> published in the COGSCI 2024 proceedings.
+            </li>
+            <li>
+                <span class="date">07/2024</span> Completed M.Sc. in Physics of Complex Systems, <a
+                    href="https://en.unito.it/">Università di Torino</a> (110/110 cum laude).
+            </li>
+            <li>
+                <span class="date">07/2023</span> Research presentation at <a
+                    href="https://www.princeton.edu/">Princeton University</a> (Prof. Jonathan D. Cohen's group).
+            </li>
+            <li>
+                <span class="date">04/2023</span> Research Intern at <a href="https://www.brown.edu/carney/">Carney
+                    Institute, Brown University</a> (through 07/2023).
+            </li>
+            <li>
+                <span class="date">01/2023</span> Research Intern at <a href="https://centai.eu/">CENTAI Institute,
+                    Torino</a> (continued into 2024).
+            </li>
+        </ul>
+    </section>
+    <section id="publications">
+        <h2> Publications </h2>
+        <!-- list of publication with at the left an image and at the right the title + authors + conference and then a small abstract -->
+        <ul>
+            <li>
+                <img src="assets/heterogeneity.png"
+                    alt="On the Benefits of Heterogeneity in Cognitive Stability and Flexibility for Collaborative Task Switching" />
+                <div>
+                    <h3>On the Benefits of Heterogeneity in Cognitive Stability and Flexibility for Collaborative Task
+                        Switching</h3>
+                    <p class="authors"><b>Alessandra Brondetta</b>, Anastasia Bizyaeva, Maxime Lucas, Giovanni Petri,
+                        Sebastian Musslick</p>
+                    <p class="links"><a href="https://escholarship.org/uc/item/6b47b61g">Paper</a>
+                        <span class="conference">CogSci 2024</span>
+                    </p>
+                    <p class="abstract">We model how the trade-off between cognitive stability and flexibility shapes
+                        group
+                        task-switching. In our multi-agent simulations, heterogeneous teams (mix of more stable and more
+                        flexible thinkers) outperform homogeneous ones in fast-changing environments—especially when the
+                        most flexible members handle switch cues. The findings inform how to compose teams and design
+                        supports in educational and clinical settings.</p>
+                </div>
+            </li>
+            <li>
+                <img src="assets/centaur_nature.png"
+                    alt="Not Yet AlphaFold for the Mind: Evaluating Centaur as a Synthetic Participant" />
+                <div>
+                    <h3>Not Yet AlphaFold for the Mind: Evaluating Centaur as a Synthetic Participant</h3>
+                    <p class="authors">Sabrina Namazova, <b>Alessandra Brondetta</b>, Younes Strittmatter, Matthew
+                        Nassar, Sebastian Musslick</p>
+                    <p class="links"><a href="https://arxiv.org/abs/2508.07887">Paper</a>
+                    </p>
+                    <p class="abstract">Simulators speed science by generating realistic data—think AlphaFold for
+                        protein
+                        structures. Behavioral science seeks a comparable participant simulator that produces human-like
+                        behavior across tasks. We review Centaur (an LLM fine-tuned on 160 experiments) against core
+                        criteria: it predicts well, but its generative behavior diverges from human data. Takeaway: a
+                        strong direction with clear potential, but additional development is required to reach
+                        participant-simulator reliability and cognitive-model completeness.</p>
+                </div>
+            </li>
+            <li>
+                <img src="assets/mentevo.png" alt="Mentevo Python Library" />
+                <div>
+                    <h3>Mentevo: A Python Library for Cognitive Stability and Flexibility Simulation</h3>
+                    <p class="authors"><b>Alessandra Brondetta</b></p>
+                    <p class="links"><a href="https://github.com/alessandrabrondetta/Mentevo">Github</a>
+                    </p>
+                    <p class="abstract">Mentevo is a compact Python library for simulating and analyzing a dynamical
+                        system
+                        model of cognitive stability and flexibility in task-switching environments, within groups of
+                        agents. Originally developed for the study presented in Brondetta et al. (2024), it provides
+                        tools to explore how environmental and task conditions (e.g., task-switching rates) affect
+                        individual and group task-switching performance. The library also includes parametrization
+                        options, performance metrics and visualization methods.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
 </body>
 
 </html>

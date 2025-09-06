@@ -1,0 +1,267 @@
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: larger;
+    font-weight: 400;
+    --black: #020618;
+    --primary: #8e51ff;
+    --grey: #f8fafc;
+    color: var(--black);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    transition: all 0.4s ease-in;
+    font-weight: 600;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+section h2 {
+    text-align: left;
+}
+
+i {
+    font-size: 0.8em;
+}
+
+/* Hero section - responsive centering */
+#content {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 32px;
+    line-height: 1.6em;
+}
+
+#content .intro {
+    font-size: 0.9em;
+    text-align: left;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+}
+
+.icons {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    font-size: 1.3em;
+    justify-content: space-between;
+    width: 50%;
+    max-width: 320px;
+    margin: 1em auto;
+    color: var(--black);
+}
+
+.icons li {
+    display: inline;
+    width: 42px;
+    background-color: var(--grey);
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.icons a {
+    color: var(--black);
+}
+
+.icons a:hover {
+    color: var(--primary);
+}
+
+/* News section - simple list */
+#news {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0px 32px;
+    font-size: 0.9em;
+}
+
+#news ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#news li {
+    padding: 5px 5px;
+    border-bottom: 1px solid var(--grey);
+    transition: all 0.35s ease-in-out;
+}
+
+#news li:hover {
+    background-color: var(--grey);
+}
+
+#news li:last-child {
+    border-bottom: none;
+}
+
+
+/* Publications section - image + content layout */
+#publications {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 32px;
+}
+
+#publications ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#publications li {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px 10px;
+    border-radius: 4px;
+    border-bottom: 1px solid var(--grey);
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+#publications li:hover {
+    background-color: var(--grey);
+}
+
+#publications li:last-child {
+    border-bottom: none;
+}
+
+#publications img {
+    --size: 45%;
+    width: var(--size);
+    height: var(--size);
+    object-fit: contain;
+    border-radius: 6px;
+    flex-shrink: 0;
+    border: 1px solid var(--grey);
+}
+
+#publications div {
+    flex-grow: 1;
+}
+
+#publications h3 {
+   margin: 0 0 12px 0;
+   font-size: 1.25em;
+   font-weight: 600;
+   color: var(--black);
+   line-height: 1.4;
+   letter-spacing: -0.01em;
+   text-align: center;
+}
+
+#publications .authors {
+   margin: 8px 0;
+   line-height: 1.6;
+   font-size: 0.85em;
+   font-style: italic;
+   color: #1d293d;
+   font-weight: 500;
+   text-align: center;
+}
+
+#publications .links {
+   margin: 8px 0;
+   font-weight: 600;
+   font-size: 0.85em;
+}
+#publications .links a {
+    color: var(--primary) !important;
+}
+
+
+#publications .conference {
+   background-color: color-mix(in srgb, var(--primary) 10%, transparent);
+   padding: 3px 10px;
+   border-radius: 3px;
+   color: var(--primary);
+}
+
+#publications .abstract {
+   margin: 12px 0 0 0;
+   color: #62748e;
+   line-height: 1.7;
+   font-size: 0.80em;
+   text-align: justify;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #content {
+        min-height: 60vh;
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+    }
+
+    .icons {
+        font-size: x-large;
+        max-width: 280px;
+    }
+
+    #news,
+    #publications {
+        padding: 30px 20px;
+    }
+
+    #publications li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    #publications img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: large;
+    }
+
+    #content {
+        min-height: 50vh;
+        padding: 15px;
+    }
+
+    .icons {
+        font-size: large;
+        max-width: 250px;
+    }
+
+    #news,
+    #publications {
+        padding: 20px 15px;
+    }
+
+    #publications h3 {
+        font-size: 1.1em;
+    }
+}
