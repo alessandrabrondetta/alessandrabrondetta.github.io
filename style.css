@@ -3,7 +3,7 @@ html {
     font-size: larger;
     font-weight: 400;
     --black: #020618;
-    --primary: #8e51ff;
+    --primary: #41d4b7;
     --grey: #f8fafc;
     color: var(--black);
 }
