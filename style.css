@@ -48,7 +48,12 @@ i {
 
 #content .intro {
     font-size: 0.9em;
-    text-align: left;
+    margin: 0 auto;      /* centers the block itself */
+    text-align: justify; /* even edges */
+    text-justify: inter-word;
+    hyphens: auto;       /* allow hyphenation */
+    /* max-width: 68ch; keep lines readable; remove if you want full width */
+    /* padding: 0px 32px; */
 }
 
 .avatar {
@@ -191,6 +196,13 @@ i {
 
 
 #publications .conference {
+   background-color: color-mix(in srgb, var(--primary) 10%, transparent);
+   padding: 3px 10px;
+   border-radius: 3px;
+   color: var(--primary);
+}
+
+#publications .preprint {
    background-color: color-mix(in srgb, var(--primary) 10%, transparent);
    padding: 3px 10px;
    border-radius: 3px;
